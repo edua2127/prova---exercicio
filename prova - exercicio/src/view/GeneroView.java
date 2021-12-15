@@ -41,7 +41,7 @@ public class GeneroView {
         System.out.println("escolha o genero a partir da posicao: ");
         int posicao = Integer.parseInt(scanner.nextLine());
         List<Livro> livroGenero = livroController.livrosGenero(generos.get(posicao).getIdGenero());
-
+        System.out.println("\n\n");
         for (Livro livro : livroGenero) {
             System.out.println("nome do livro: " + livro.getNome() + " genero do livro: " + livro.getGenero().getNome() + " biblioteca do livro: " + livro.getBiblioteca().getNome());
         }
